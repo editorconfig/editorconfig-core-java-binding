@@ -1,0 +1,17 @@
+language: java
+
+jdk:
+  - openjdk7
+  - oraclejdk7
+
+
+# test script
+script:
+  - ant -v
+  - ant -v doc
+
+# Notification
+notifications:
+  email:
+    on_success: change
+    on_failure: always
