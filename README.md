@@ -1,7 +1,7 @@
 # EditorConfig Java Binding
 
 This directory is for [EditorConfig][] Core Java Binding. This binding is a
-Java wrapper for [EditorConfig Python Core][], made possible by [Jython][].
+Java binding for [EditorConfig Python Core][], made possible by [Jython][].
 
 ## EditorConfig Project
 
@@ -14,9 +14,14 @@ information on the file format and supported text editors, see the
 
 ## Build the Library and Generate the Doc
 
+First be sure that the submodule is initialized:
+
+    cd /path/to/editorconfig-core-java-binding
+    git submodule init
+    git submodule update
+
 With [Ant][]:
 
-    cd /path/to/editorconfig-core-py/java-binding
     ant && ant doc
 
 The built jar file is in the `build` directory and the documentation is in the
@@ -51,7 +56,7 @@ directory.
 All source files of the Java binding are distributed under the PSF license. See
 LICENSE.txt for details.
 
-Copyright (C) 2012, EditorConfig Team
+Copyright (C) 2012-2013, EditorConfig Team
 
 [Ant]: http://ant.apache.org
 [EditorConfig Python Core]: https://github.com/editorconfig/editorconfig-core-py
