@@ -1,5 +1,6 @@
 package org.editorconfig.core;
 
+import java.io.File;
 import java.util.LinkedList;
 import java.util.List;
 import org.python.core.Py;
@@ -82,7 +83,7 @@ public class EditorConfig {
         // Add all "jarLocations/Lib" to sys.path
         if(jarLocations != null)
             for(String jarPath : jarLocations)
-                pySysStat.path.append(new PyString(jarPath + "/Lib"));
+                pySysStat.path.append(new PyString(jarPath.replace('\\', '/') + "/Lib"));
 
         pyInterp.exec("from editorconfig import get_properties");
         pyInterp.exec("from editorconfig import exceptions");
