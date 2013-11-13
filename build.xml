@@ -40,6 +40,13 @@
 
   <!-- pack jython EditorConfig -->
   <target name="pack-jython-editorconfig" depends="unpack-jython,build-java-wrapper">
+    <fail message="Missing editorconfig-core-py files. Please run 'git submodule update --recursive' to have those files.">  <!-- editorconfig.py.dir can't be empty--> 
+      <condition>
+        <not>
+          <available file="${editorconfig.py.dir}/editorconfig/main.py"/>
+        </not>
+      </condition>
+    </fail>
     <mkdir dir="${build.dir}" />
     <jar destfile="${build.dir}/editorconfig.jar">
       <fileset dir="./classes">
