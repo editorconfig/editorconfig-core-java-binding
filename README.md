@@ -3,6 +3,9 @@
 This directory is for [EditorConfig][] Core Java Binding. This binding is a
 Java binding for [EditorConfig Python Core][], made possible by [Jython][].
 
+**NOTE:** This java binding has been obsoleted. Please use
+[EditorConfig Java Core][] instead.
+
 ## EditorConfig Project
 
 EditorConfig makes it easy to maintain the correct coding style when switching
@@ -59,6 +62,7 @@ LICENSE.txt for details.
 Copyright (C) 2012-2013, EditorConfig Team
 
 [Ant]: http://ant.apache.org
+[EditorConfig Java Core]: https://github.com/editorconfig/editorconfig-core-java
 [EditorConfig Python Core]: https://github.com/editorconfig/editorconfig-core-py
 [EditorConfig]: http://editorconfig.org
 [Jython]: http://www.jython.org
