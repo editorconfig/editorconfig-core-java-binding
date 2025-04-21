@@ -64,6 +64,6 @@ Copyright (C) 2012-2013, EditorConfig Team
 [Ant]: http://ant.apache.org
 [EditorConfig Java Core]: https://github.com/editorconfig/editorconfig-core-java
 [EditorConfig Python Core]: https://github.com/editorconfig/editorconfig-core-py
-[EditorConfig]: http://editorconfig.org
+[EditorConfig]: https://editorconfig.org
 [Jython]: http://www.jython.org
 [online documentation]: http://javadocs.editorconfig.org
